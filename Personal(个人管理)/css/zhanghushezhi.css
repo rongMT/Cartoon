@@ -1,0 +1,140 @@
+/*主体内容*/
+.container{
+	
+	height:500px;
+}
+.container .left_nav
+{
+	width:200px;
+	height:400px;
+	position:absolute;
+	left:21px;
+	top:80px;
+	background:#000000;
+	border:solid #140b0b;
+	border-radius: 24px;
+}
+.container .left_nav ul
+{
+	text-align: center;
+	font-family:"方正胖娃繁体";
+	font-size:22px;
+	color:#FFF;
+	
+}
+.container .left_nav ul li
+{
+	margin:40px 1px;
+	line-height:30px;
+	display: block;
+	width:200px;
+	height:30px;
+}
+.container .left_nav ul li a
+{
+	text-decoration:none;
+	display: block;
+	color:#FFF;
+}
+.container .left_nav ul li a:hover
+{
+	color: #fff;
+	background:#66CCFF;
+}
+/*右边的内容*/
+.container .right_title
+{
+	height:500px;
+	position:absolute;
+	width:950px;
+	right:0px;
+	top:0px;
+	
+}
+.container .right_title h2
+{
+	font-size:40px;
+	margin-top:30px;
+}
+.container .right_title .table
+{
+	width:100%;
+	height:40px;
+	margin-top:50px;
+	
+}
+.container .right_title .table table
+{
+	width:100%;
+	height:100%;
+	
+}
+.container .right_title .table table tbody
+{
+	border:0px;
+}
+.container .right_title .table table tr
+{
+	width:100%;
+	height:100%;
+}
+.container .right_title .table table tr .label
+{
+	width:200px;
+	height:100%;
+	text-align:right;
+}
+.container .right_title .table table tr .label label
+{
+	font-family:"幼圆";
+	font-size:24px;
+	line-height:40px;
+	display: block;
+	width:100%;
+	height:100%;
+	text-align:right;
+}
+.container .right_title .table table tr .input
+{
+	width:300px;
+	height:100%;
+	text-align: left;
+}
+.container .right_title .table table tr .input .right_input
+{
+	width:80%;
+	height:30px;
+	border-radius: 5px;
+}
+.container .right_title .table table tr .jingao_UserPassword
+{
+  width:30%;
+  height:100;
+  font-size:18px;
+  color:red;
+  line-height:40px;
+  	
+}
+.container .right_title .table table tr .jingao_UserPassword label
+{
+	text-align: left;
+	float:left;
+}
+
+/*提交按钮*/
+.container .right_title .table table tr  .td_submit
+{
+	width:100%;
+	height:100%;
+}
+.container .right_title .table table tr  .td_submit .submit
+{
+	margin-left:60%;
+	width:200px;
+	height:40px;
+	border-radius: 10px;
+	background:#000;
+	color: #fff;
+	line-height:100%;
+	font-size:30px;
+}

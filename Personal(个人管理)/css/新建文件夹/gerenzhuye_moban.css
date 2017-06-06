@@ -1,0 +1,146 @@
+@font-face{ 
+		  font-family: 'lanting'; 
+		  src: url('../ttf/lanting.ttf'); 
+		} 
+*{
+	padding:0px;
+	margin:0px;
+}
+.header{
+	width:80%;
+	height:200px;
+	background:url(../img/header.jpg) center no-repeat;
+	margin:0px auto;
+	position:relative;
+	overflow: hidden;
+	
+	}
+.header .logo{
+	width:263px;
+	height:150px;
+	float:left;
+}
+.header .logo img{
+	  width:263px;
+	  height:150px;
+}
+.header .qianming{
+	position:absolute;
+	right:0px;
+	bottom:0px;
+	width:75%;
+	height:30px;
+	background:rgba(255,255,255,0.1);
+}
+.header .qianming .myqingming{
+	background:rgba(255,255,255,0.1);
+	border:0px;
+	width:100%;
+	height:100%;
+	text-align:left;
+}
+.huiyan{
+	
+	width:80%;
+	height:50px;
+	background:rgba(0,0,0,0.8);
+	margin:0px auto;
+	margin-top:30px;
+}
+.huiyan ul
+{
+	list-style:none;
+}
+.huiyan ul li
+{
+	display:inline-block;
+	font-size:24px;
+	font:"幼圆";
+	line-height:50px;
+	float: right;
+	padding-right: 60px;
+	color:#fff;
+}
+.touxiang
+{
+	position:absolute;
+	top:150px;
+	left:15%;
+	width:150px;
+	height:150px;
+	background:blue;
+	border-radius: 10px;
+	z-index: 100;
+}
+.touxiang img
+{
+	border-radius: 10px;
+}
+/*主体内容*/
+.container{
+	width:80%;
+	margin:0px auto;
+	height:800px;
+	position:relative;
+}
+/*左边的导航栏*/
+.container .left_nav
+{
+	width:200px;
+	height:530px;
+	position:absolute;
+	left:0px;
+	top:80px;
+	background:#1A91D8;
+	
+	border-radius: 5px;
+}
+.container .left_nav ul
+{
+	width:100%;
+	text-align: center;
+	font-family: 'lanting';
+	font-size:18px;
+	color:#000;
+	
+}
+.container .left_nav ul li
+{
+	width:100%;
+	margin-top: 10px;
+	margin-bottom:15px;
+	display: block;
+	height:30px;
+}
+.container .left_nav ul li a
+{
+	padding-top: 10px;
+	color: #000000;
+	text-decoration:none;
+	display: block;
+	width:100%;
+	height:100%;
+}
+.container .left_nav ul li a:hover
+{
+	color: #fff;
+	background:#66CCFF;
+}
+/*右边的内容*/
+.container .right_title
+{
+	width:70%;
+	height:800px;
+	background:#fff;
+	position:absolute;
+	right:0px;
+	top:0px;
+	
+}
+/*底部的版权*/
+.footer{
+	width:80%;
+	height:100px;
+	background:rgba(0,0,0,0.6);
+	margin:0px auto;
+}

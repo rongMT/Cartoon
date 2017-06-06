@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>次元动漫网</title>
+<meta name="keywords" content="动漫, 次元, 二次元, 番剧"/>
+<meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+	
+	<!-- 番剧板块以及主体main的布局 -->
+	<link rel="stylesheet" href="css/index_main.css"> 
+	<!-- 游戏资讯版块 -->
+	<link rel="stylesheet" href="css/index_game.css">
+	<!-- 引入JQuery -->
+	<script src="js/css3-mediaqueries.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	
+	<script>
+	var eleDrag = document.getElementById("drag");
+	if (eleDrag) {
+	    startDrag(eleDrag, eleDrag, function(x, y) {
+	        eleDrag.style.backgroundPosition = (-1 * x) + "px " + (-1 * y) + "px";    
+	    });
+	}
+	</script>
+
+	<!-- 首页头部的CSS -->
+	<link rel="stylesheet" href="css/base.css">
+</head>
+
+<body>
+<!--顶部-->
+<div class="top">
+			<div id="drag" class="drag">
+			    	<div class="drag_color">
+						<from class="nav_right">
+					       <input type="image" src="img/背景.jpg"  class="input input_image">
+					       <input type="button" value="注册" class="input button zhuce"  onclick="tiaozhuan('zhuce')"/>
+					       <input type="button" value="登陆" class= 'input button denglu' onclick="tiaozhuan('denglu')"/>
+				        </from>
+			    </div>
+					
+			</div>
+			<div class="logo"><img src="img/logo.png" alt=""></div>
+	</div>
+
+
+<!--导航-->
+<div class="wrap">
+	<div class="nav">
+		<ul class="navlist">
+			<li><a href="index.html">首页</a></li>
+			<li><a href="">番剧</a></li>
+			<li><a href="">音乐</a></li>
+			<li><a href="Image.html">美图</a></li>
+			<li><a href="">游戏</a></li>
+			<li><a href="">鬼畜</a></li>
+		</ul>
+		<div class="search_box">
+		<form class="search-form" action="" target="_blank">
+	 		<input type="text" class="search-text" name="####"/>
+	 		<input type="submit" class="search-button" value=""/>
+	 	</form>
+		</div>
+	</div>
+<!--图片切换-->
+
+<!--新番-->
+	<div class="index_fanju main" style="float: left;">
+			<ul class="main_fanju">
+				<li><a href="http://bangumi.bilibili.com/anime/5747"><i><img src="img/index_img/index_fanju/Fate第一命令.jpg" alt=""></i></a><a href="">Fate第一命令</a></li>
+				<li><a href=""><i><img src="img/index_img/index_fanju/ReWrite第二季.jpg" alt=""></i></a><a href="">ReWrite第二季</a></li>
+				<li><a href=""><i><img src="img/index_img/index_fanju/丽迷路帖.jpg" alt=""></i></a><a href="">丽迷路帖</a></li>
+				<li><a href=""><i><img src="img/index_img/index_fanju/飚速宅男.jpg" alt=""></i></a><a href="">飚速宅男</a></li>
+				<li><a href=""><i><img src="img/index_img/index_fanju/热诚传说第二季.jpg" alt=""></i></a><a href="">热诚传说第二季</a></li>
+				<li><a href=""><i><img src="img/index_img/index_fanju/三年E班Q.jpg" alt=""></i></a><a href="">三年E班Q</a></li>
+				<li><a href=""><i><img src="img/index_img/index_fanju/手摇床.jpg" alt=""></a></i><a href="">手摇床</a></li>
+				<li><a href=""><i><img src="img/index_img/index_fanju/猫咪日常.jpg" alt=""></i></a><a href="">猫咪日常</a></li>
+				<li><a href=""><i><img src="img/index_img/index_fanju/火影忍者疾风传.jpg" alt=""></i></a><a href="">火影忍者疾风传</a></li>
+				<li><a href=""><i><img src="img/index_img/index_fanju/超自然九人组.jpg" alt=""></i></a><a href="">超自然九人组</a></li>
+			</ul>
+	</div>
+<!--游戏-->
+	<div class="index_game less_main" style="float: left;">
+		<div class="htmleaf-container">
+			<div class="leaderboard">
+			  <ol>
+			    <li>
+			     <a href="Game/Game_news1.html?i=1"><mark>鸣圣亚鹰坐镇 《皇室战争》师王争霸赛海选周末继续</mark></a>
+			      <small>315</small>
+			    </li>
+			    <li>
+			      <a href="Game/Game_news2.html?i=2"><mark>《天谕》业影轮回资料片测评 暗影刺客的惊艳出世！</mark></a>
+			      <small>301</small>
+			    </li>
+			    <li>
+			      <a href="Game/Game_news3.html?i=3"><mark>《你的名字》泡沫将至 吉卜力元老吐槽业界太心急</mark></a>
+			      <small>292</small>
+			    </li>
+			    <li>
+			      <a href="Game/Game_news4.html?i=4"><mark>能够操控一切？神奇的VR手势控制腕带将出展CES</mark></a>
+			      <small>245</small>
+			    </li>
+			    <li>
+			      <a href="Game/Game_news5.html"><mark>《方舟：生存进化Online》公平竞技新模式玩法首曝</mark></a>
+			      <small>203</small>
+			    </li>
+			    <li>
+			      <a href="Game/Game_news6.html"><mark>Steam完善的游戏社交生态圈 让国产单机迎来了春天</mark></a>
+			      <small>203</small>
+			    </li>
+			     <li>
+			      <a href="Game/Game_news7.html"><mark>《过山车大亨：梦想》PSVR体验太烂！索尼被狂喷</mark></a>
+			      <small>245</small>
+			    </li>
+			    <li>
+			      <a href="Game/Game_news8.html"><mark>军团再战 王者再临 《铁甲雄兵》前测邀请赛开启</mark></a>
+			      <small>203</small>
+			    </li>
+			    <li>
+			      <a href="Game/Game_news9.html"><mark>外挂太多了？《战地1》PC玩家流失严重 近10万</mark></a>
+			      <small>203</small>
+			    </li>
+			  </ol>
+			</div>
+		</div>   
+	</div>
+<!--音乐-->
+	<div class="less_main index_yinyue" style="float: left; height: 380px;">
+		<div class="grid-music-container f-usn">
+   	 <div class="m-music-play-wrap">
+        <div class="u-cover"></div>
+        <div class="m-now-info">
+            <h1 class="u-music-title"><strong>标题</strong><small>歌手</small></h1>
+            <div class="m-now-controls">
+                <div class="u-control u-process">
+                    <span class="buffer-process"></span>
+                    <span class="current-process"></span>
+                </div>
+                <div class="u-control u-time">00:00/00:00</div>
+                <div class="u-control u-volume">
+                    <div class="volume-process" data-volume="0.50">
+                        <span class="volume-current"></span>
+                        <span class="volume-bar"></span>
+                        <span class="volume-event"></span>
+                    </div>
+                    <a class="volume-control"></a>
+                </div>
+            </div>
+            <div class="m-play-controls">
+                <a class="u-play-btn prev" title="上一曲"></a>
+                <a class="u-play-btn ctrl-play pause" title="暂停"></a>
+                <a class="u-play-btn next" title="下一曲"></a>
+                <a class="u-play-btn mode mode-list current" title="列表循环"></a>
+                <a class="u-play-btn mode mode-random" title="随机播放"></a>
+                <a class="u-play-btn mode mode-single" title="单曲循环"></a>
+            </div>
+        </div>
+    </div>
+    <div class="f-cb">&nbsp;</div>
+    <div class="m-music-list-wrap"></div>
+</div>
+	</div>
+<!--图片-->
+	<div class="main index_tu" style="float: left; height:380px;">
+		<div id="tou_left">
+			<ul class="index_tupian">
+				<li class="img"><p class="tu"><a href="" class="preview" target="_blank"><img src="img/index_img/index_tupian/1.png" border="0" width="190" height="130" alt="性感动漫美少女图片_美丽诱人的美少女"></a></p><p class="zi"><a href="" class="title" target="_blank">性感动漫美少女图片_美丽诱人的美少女</a></p></li>
+				<li class="img"><p class="tu"><a href="" class="preview" target="_blank"><img src="img/index_img/index_tupian/2.jpg" border="0" width="190" height="130" alt="蜡笔小新空间图片_超级可爱的小新"></a></p><p class="zi"><a href="" class="title" target="_blank">蜡笔小新空间图片_超级可爱的小新</a></p></li>
+				<li class="img"><p class="tu"><a href="" class="preview" target="_blank"><img src="img/index_img/index_tupian/3.jpg" border="0" width="190" height="130" alt="手绘女孩带字图片_手绘可爱的女孩"></a></p><p class="zi"><a href="" class="title" target="_blank">手绘女孩带字图片_手绘可爱的女孩</a></p></li>
+				<li class="img"><p class="tu"><a href="" class="preview" target="_blank"><img src="img/index_img/index_tupian/4.jpg" border="0" width="190" height="130" alt="动漫文字图片_瓶子的爱情故事"></a></p><p class="zi"><a href="" class="title" target="_blank">动漫文字图片_瓶子的爱情故事</a></p></li>
+				<li class="img"><p class="tu"><a href="" class="preview" target="_blank"><img src="img/index_img/index_tupian/5.jpg" border="0" width="190" height="130" alt="可爱动漫女生图片_大眼动漫萌女生"></a></p><p class="zi"><a href="" class="title" target="_blank">可爱动漫女生图片_大眼动漫萌女生</a></p></li>
+				<li class="img"><p class="tu"><a href="" class="preview" target="_blank"><img src="img/index_img/index_tupian/6.jpg" border="0" width="190" height="130" alt="张小盒系列图片_可爱的张小盒"></a></p><p class="zi"><a href="" class="title" target="_blank">张小盒系列图片_可爱的张小盒</a></p></li>
+			</ul>
+		</div>
+	</div>
+	
+</div>
+<script>
+		$(function(){
+			$('.main_fanju li a').mouseenter(function(){
+				$(this).find('img').animate({top:"-20px", opacity:"0"}, 200, function(){
+						$(this).css.top = "30px"
+						$(this).animate({top:"0px", opacity:"1"}, 200);
+				});
+				$(this).find('i').animate({opacity:"1"},100,function(){
+				});
+			});
+			$('.main_fanju li a').mouseout(function(){
+				$(this).find('i').animate({opacity:"0.8"},200,function(){	
+				});
+			});
+		});
+	</script>
+
+<script src="js/music.js"></script>
+<script>
+var musicList = [
+	{
+		title : '鎖那',
+		singer : '13',
+		cover  : 'img/index_img/index_music/gufen.png',
+		src    : 'music/鎖那 - 13.mp3'
+	},
+	{
+		title : '亜咲花',
+		singer : 'Open your eyes',
+		cover  : 'img/index_img/index_music/open.png',
+		src    : 'music/亜咲花 - Open your eyes.mp3'
+	},	
+	{
+		title : '名前のない怪物',
+		singer : '',
+		cover  : 'img/index_img/index_music/moren.png',
+		src    : 'music/名前のない怪物 - 双声道版.mp3'
+	},
+	{
+		title : 'はじめての、東京',
+		singer : '',
+		cover  : 'img/index_img/index_music/梦.png',
+		src    : 'music/はじめての、東京.mp3'
+	},
+	{
+		title : '夢灯籠',
+		singer : '',
+		cover  : 'img/index_img/index_music/梦.png',
+		src    : 'music/夢灯籠.mp3'
+	}
+];
+new SMusic({
+	musicList:musicList
+});
+</script>
+
+</body>
+</html>
+	

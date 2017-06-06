@@ -1,0 +1,37 @@
+[//
+	{"biaoti":"1", "wenzhang":"Canon in D"}, 
+	{"biaoti":"2", "wenzhang":"Wind Song"}, 
+	{"biaoti":"3", "wenzhang":"Wings"} ,
+  {
+    "biaoti": "4",
+    "wenzhang": "Wings"
+  },
+
+  {
+    "biaoti": "《方舟：生存进化Online》公平竞技新模式玩法首曝",
+    "wenzhang": " "
+  },
+
+	{"biaoti":"6", "wenzhang":"Wings"} 
+
+]
+
+//
+//从json中取得数据并填充，但由于数据量大难处理且跨域请求不支持本地查看，所以pass
+//<script>
+//alert('message');
+//$(document).ready(function() {
+//alert(window.location.href.split('=')[1]);
+//$.getJSON('list_data.json',function(data){
+//var html="<h2>";
+//var biaoti = "";
+//$.each(data,function(Oindex,n){
+//biaoti += n["biaoti"]
+//html += n["wenzhang"];
+//});
+//biaoti += "</h2>";
+//alert(biaoti);
+//alert(html);
+//$('#game').append(biaoti);
+//});
+//});

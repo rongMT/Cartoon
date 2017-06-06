@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="css/gerenzhuye_moban.css" rel="stylesheet" type="text/css">
+		<link href="css/myxingxi.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="js/jquery-3.1.1.slim.js"></script>
+		<script type="text/javascript" src="js/city.js"></script>
+		<script type="text/javascript" src="js/touxiang.js"></script>
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="header">
+			<!--logo-->
+			<div class="logo"><img src="img/logo.png" alt="logo" /></div>
+			<!--签名-->
+			<div class="qianming">
+				<from>
+					<input type="text" class="myqingming" name="myqianming" />
+				</from>
+			</div>
+		</div>
+		<div class="contentWarp">
+			<!--会员栏-->
+			<div class="huiyan">
+				<ul>
+					<li>我的会员服务</li>
+					<li>上次登陆时间</li>
+				</ul>
+			</div>
+			<!--个人头像-->
+			<div class="touxiang">
+				<img src="img/3.jpg" width="100%" height="100%" alt="头像" />
+			</div>
+			<!--主要内容-->
+			<div class="container">
+				<!--左边固定的导航栏-->
+				<div class="left_nav">
+					<ul>
+					<li><a href="gerenzhuye.html">我的主页</a></li>
+					<li><a href="myXingxi.html">个人信息</a></li>
+					<li><a href="zhanghushezhi.html">修改密码</a></li>
+					<li><a href="">我的收藏</a></li>
+					<li><a href="mytiezi.html">我的帖子</a></li>
+					</ul>
+				</div>
+				<!--右边的内容-->
+				<div class="right_title">
+					<h2>个人信息</h2>
+					<from name="frm">
+						<div class="table">
+							<table>
+								<tr>
+									<td class="label"><label for="UserNicName">昵称：</label></td>
+									<td class="input"><input type="text" name="UserNicName" id="UserNicName" class="right_input"></td>
+								</tr>
+							</table>
+						</div>
+						<div class="table">
+							<table>
+								<tr>
+									<td class="label"><label for="UserAge">年龄：</label></td>
+									<td class="input"><input type="text" name="UserAge" id="UserAge" class="right_input"></td>
+								</tr>
+							</table>
+						</div>
+						<div class="table">
+							<table>
+								<tr>
+									<td class="label"><label for="UserSex">性别：</label></td>
+									<td class="input">
+										<input type="radio" name='UserSex' id="UserSex_nan">男
+										<input type="radio" name='UserSex' id="UserSex_nv">女
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="table">
+							<table>
+								<tr>
+									<td class="label"><label for="UserEmail">邮箱：</label></td>
+									<td class="input"><input type="email" name="UserEmail" id="UserEmail" class="right_input"></td>
+								</tr>
+							</table>
+						</div>
+						<div class="table">
+							<table>
+								<tr>
+									<td class="label"><label for="UserTel">电话号码：</label></td>
+									<td class="input"><input type="tel" name="UserTel" id="UserTel" class="right_input"></td>
+								</tr>
+							</table>
+						</div>
+						<div class="table">
+							<table>
+								<tr>
+									<td class="label"><label for="UserTrueName">真实姓名：</label></td>
+									<td class="input"><input type="text" name="UserTrueName" id="UserTrueName" class="right_input"></td>
+								</tr>
+							</table>
+						</div>
+						<div class="table">
+							<table>
+								<tr>
+									<td class="label"><label for="UserTrueName">地区：</label></td>
+									<td class="input">
+										<select name="optProvince" size="1" onchange="ChangeCity()" id="sheng">
+											<option>--请选择--</option>
+											<option>湖南</option>
+											<option>湖北</option>
+											<option>广东</option>
+											<option>广西</option>
+											<option>河南</option>
+											<option>河北</option>
+											<option>山东</option>
+											<option>山西</option>
+											<option>江苏 </option>
+											<option>浙江</option>
+											<option>江西</option>
+											<option>黑龙江</option>
+											<option>新疆</option>
+											<option>云南</option>
+											<option>贵州</option>
+											<option>福建</option>
+											<option>吉林</option>
+											<option>安徽</option>
+											<option>四川</option>
+											<option>西藏</option>
+											<option>宁夏</option>
+											<option>辽宁</option>
+											<option>青海</option>
+											<option>甘肃</option>
+											<option>陕西</option>
+											<option>内蒙古</option>
+											<option>台湾</option>
+											<option>北京</option>
+											<option>上海</option>
+											<option>天津</option>
+											<option>海南省</option>
+											<option>重庆</option>
+											<option>香港</option>
+											<option>澳门</option>
+										</select>
+										<select name="optCity" size="1" id="shi">
+										</select>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="img">
+							<table>
+								<tr>
+									<td class="label"><label for="UserImage">头像：</label></td>
+									<td class="input">
+										<input type="image"  name="UserImage" id="preview" class="image" alt="头像">
+										<input type="file" name="file" onchange="imgPreview(this)" />
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="table">
+							<table>
+								<tr>
+									<td class="td_submit"><input type="submit" name="submit" id="submit" class="submit" value="提交" /></td>
+								</tr>
+							</table>
+						</div>
+					</from>
+				</div>
+			</div>
+		    <!--底部版权-->
+		    <div class="footer">
+			
+             </div>
+		</div>
+		
+	</body>
+
+</html>

@@ -1,0 +1,160 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+
+.header{
+	height:180px;
+	width:1920px;
+	background:url(../img/header.jpg) center no-repeat;
+	overflow: hidden;
+	
+	}
+.header .logo{
+	/*width:263px;
+	height:150px;
+	float:left;*/
+    padding: 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    word-wrap: break-word;
+    font-size: inherit;
+    line-height: inherit;
+    overflow: visible;
+}
+.header .logo img{
+	  /*width:263px;
+	  height:150px;*/
+	margin-left: 45px;
+    margin-top: 70px;
+    width: 180px;
+    height: 100px;
+}
+}
+.header .qianming{
+	position:absolute;
+	right:0px;
+	bottom:0px;
+	width:75%;
+	height:30px;
+	background:rgba(255,255,255,0.1);
+}
+.header .qianming .myqingming{
+	background:rgba(255,255,255,0.1);
+	border:0px;
+	width:100%;
+	height:100%;
+	text-align:left;
+}
+.huiyan{
+	height:50px;
+    background: #000000;
+	margin:0px auto;
+	margin-top:30px;
+    border-radius: 90px;
+}
+.huiyan ul
+{
+	list-style:none;
+}
+.huiyan ul li
+{
+	display:inline-block;
+	font-size:24px;
+	font-family:"方正康体繁体";
+	line-height:50px;
+	float: right;
+	padding-right: 60px;
+	color:#fff;
+}
+.touxiang
+{
+	position: absolute;
+    top: -52px;
+    left: 30px;
+	width:150px;
+	height:150px;
+	background:blue;
+	border-radius: 90px;
+	z-index: 100;
+	border:#6a6a6a;
+	border-style: outset;
+}
+.touxiang img
+{
+	border-radius: 90px;
+}
+
+/**主题内容包括**/
+.contentWarp {
+	margin:0 auto;
+	width: 1200px;
+	position: relative;
+}
+/**主题内容包括**/
+
+/*主体内容*/
+.container{
+    margin: 13px auto;
+	height:800px;
+	position:relative;
+	border-radius: 24px;
+    border:#000 solid;
+}
+/*左边的导航栏*/
+.container .left_nav
+{
+	width:200px;
+	height:530px;
+	position:absolute;
+	left:21px;
+	top:80px;
+	background:#000000;
+	border:solid #140b0b;
+	border-radius: 24px;
+}
+.container .left_nav ul
+{
+	text-align: center;
+	font-family:"方正胖娃繁体";
+	font-size:22px;
+	color:#FFF;
+	
+}
+.container .left_nav ul li
+{
+	margin:61px 1px;
+	line-height:30px;
+	display: block;
+	width:200px;
+	height:30px;
+}
+.container .left_nav ul li a
+{
+	text-decoration:none;
+	display: block;
+	color:#FFF;
+}
+.container .left_nav ul li a:hover
+{
+	color: #fff;
+	background:#66CCFF;
+}
+/*右边的内容*/
+.container .right_title
+{
+	height:800px;
+	position:absolute;
+	width:950px;
+	right:0px;
+	top:0px;
+	
+}
+/*底部的版权*/
+.footer{
+	width:100%;
+    height: 100px;
+    background: rgb(255, 255, 255);
+    border: #000000 solid;
+    margin: 0px auto;
+    border-radius: 20px;
+}

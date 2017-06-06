@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/chromagallery.min.css"> 
+    <style type="text/css">
+        @font-face{
+            font-family: lanting;
+            src: url('ttf/lanting.ttf');
+        }
+        body,html
+        {
+            height: 100%;
+        }
+        .content
+        {
+            width: 100%;
+            height: 100%;
+            margin: 10px auto;
+        }
+        @media screen and (min-width: 980px){
+          .content {
+            -webkit-box-shadow:0 1px 10px rgba(0, 0, 0, .4);  
+            -moz-box-shadow:0 1px 10px rgba(0, 0, 0, .4);  
+            box-shadow:0 1px 10px rgba(0, 0, 0, .4);  
+            width: 70%;
+          }
+        }       
+        .mygallery
+        {
+            margin: 25px 0;
+        }
+       
+        * {
+            margin: 0;
+            padding: 0;
+        }
+       .wrap{
+            margin:0 auto;
+            width: 100%;
+        }
+        .top{
+            position: absolute;
+            width:1920px;
+            height: 180px;
+            background-color: black;
+            background-image:url(img/index_img/top.jpg);
+             position: relative; 
+             overflow: hidden;
+        }
+        .top .logo img{
+            margin-left: 50px;
+            margin-top: 70px;
+            width:180px;
+            height: 100px;
+            
+        }
+        .drag{ 
+            margin-top: 0px;
+            width: 100%; height: 50px;
+            background: inherit; 
+            -webkit-filter: blur(8px); -moz-filter: blur(8px); filter: blur(8px); 
+            position: absolute; 
+            overflow: hidden;
+        }
+        .drag_color{
+             width: 100%; height: 50px;
+            opacity: 0.3;
+            filter: alpha(opacity=30);
+            position:relative;
+             background-color: #FFFFFF;
+             z-index: 5;
+        }
+        .drag:active {
+            cursor: -webkit-grabbing; cursor: -moz-grabbing; cursor: grabbing;
+        }
+        .header{
+            filter: alpha(opacity==70);
+            opacity: 0.7;
+            min-width: 617px;
+            width: 80%;
+            height: 40px;
+            z-index: 2;
+            position: absolute;
+            background-color:#DFDFDF;
+        }
+        .header_img{
+            width: 1200px;
+            height: 50px;
+        }
+        .nav{
+            margin:0 auto;
+            width: 70%;
+            height: 50px;
+            background-color:#3534CC;
+        }
+        .navlist{
+            list-style:none;
+        }
+        .navlist li{
+            height: 50px;
+            float: left;
+        }
+        .navlist li a{
+            font-size: 18px;
+            font-family: lanting;
+            color:#66FFF3;
+            line-height: 50px;
+            padding: 15px;
+            text-decoration: none;
+        }
+        .search_box{padding-top: 5px;padding-right: 5px;}
+        .search-form{float: right; background-color: #fff;padding:5px;}
+        .search-text{height:25px;line-height:30px;font-size: 18px; float: left;width: 200px;border: 0;outline: none;overflow:hidden;}
+        .search-button{background-image: url(img/search_btn.png);width:29px;height:29px;float: left;border: 0;border-radius: 12px;}
+    
+    </style>
+</head>
+<body>
+
+<!--顶部-->
+<div class="top">
+            <div id="drag" class="drag">
+                    <div class="drag_color"></div>
+            </div>
+            <div class="logo"><img src="img/logo.png" alt=""></div>
+    </div>
+
+<!--导航-->
+<div class="wrap">
+    <div class="nav">
+        <ul class="navlist">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="">番剧</a></li>
+            <li><a href="">音乐</a></li>
+            <li><a href="#">美图</a></li>
+            <li><a href="">游戏</a></li>
+            <li><a href="">鬼畜</a></li>
+        </ul>
+        <div class="search_box">
+        <form class="search-form" action="" target="_blank">
+            <input type="text" class="search-text" name="####"/>
+            <input type="submit" class="search-button" value=""/>
+        </form>
+        </div>
+    </div>
+
+    <div class="content">
+            <div class="chroma-gallery mygallery">
+                <img src="img/Image/images/thumbs/1.jpg" alt="Pic 1" data-largesrc="img/Image/images/1.jpg">
+                <img src="img/Image/images/thumbs/2.jpg" alt="Pic 2" data-largesrc="img/Image/images/2.jpg">
+                <img src="img/Image/images/thumbs/3.jpg" alt="Pic 3" data-largesrc="img/Image/images/3.jpg">
+                <img src="img/Image/images/thumbs/4.jpg" alt="Pic 4" data-largesrc="img/Image/images/4.jpg">
+                <img src="img/Image/images/thumbs/5.jpg" alt="Pic 5" data-largesrc="img/Image/images/5.jpg">
+                <img src="img/Image/images/thumbs/6.jpg" alt="Pic 6" data-largesrc="img/Image/images/6.jpg">
+                <img src="img/Image/images/thumbs/7.jpg" alt="Pic 7" data-largesrc="img/Image/images/7.jpg">
+                <img src="img/Image/images/thumbs/8.jpg" alt="Pic 8" data-largesrc="img/Image/images/8.jpg">
+                <img src="img/Image/images/thumbs/9.jpg" alt="Pic 9" data-largesrc="img/Image/images/9.jpg">
+                <img src="img/Image/images/thumbs/10.jpg" alt="Pic 10" data-largesrc="img/Image/images/10.jpg">
+            </div>
+    </div>
+</div>
+
+    <!-- 图片上的alt属性用于指定图片的标题。data-largesrc属性用于指定该图片的高清版本图片的URL位置。 -->
+
+    <script src="js/jquery-1.11.0.min.js"></script> 
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+    <script src="js/chromagallery.pkgd.min.js"></script>
+    <script type="text/javascript">
+        // $(document).ready(function() 
+        // {
+        //     $(".mygallery").chromaGallery();
+        // });
+        $(document).ready(function(){
+            $(".mygallery").chromaGallery
+            ({
+                color:'#000',
+                gridMargin:15,
+                maxColumns:5,
+                dof:true,
+                screenOpacity:0.8
+            });
+        });
+        
+    </script>             
+</body>
+</html>
